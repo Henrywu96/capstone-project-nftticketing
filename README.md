@@ -5,7 +5,7 @@
 1. clone the project
 
 ```bash
-git clone
+git clone https://github.com/Henrywu96/capstone-project-nftticketing.git
 ```
 
 2. Install all dependencies
