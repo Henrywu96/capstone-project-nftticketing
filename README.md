@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Capstone Project: NFT Ticketing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Setup
 
-## Available Scripts
+1. clone the project
 
-In the project directory, you can run:
+```bash
+git clone
+```
 
-### `npm start`
+2. Install all dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm install
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Install hardhat
 
-### `npm test`
+```bash
+npm install --save-dev hardhat
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Install Metamask
 
-### `npm run build`
+5. Run the project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## NFT Ticketing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Problem statement
+  - A ticket is either a barcoded PDF file or a piece of paper with a barcode, so entertainment companies cannot access their customers' information. Since fraudsters are a significant concern in the secondary market because they take advantage of the lack of pricing transparency and the limited number of tickets, the secondary market is fraught with danger.
 
-### `npm run eject`
+- Goals
+  - NFT enable event organizers to reduce the time and resources required to produce tickets for specific events.
+  - When an event is over, those NFT tickets can be sold or collected as collectibles, and certain event organisers will provide the collectors with an item for future events.
+  - NFT provide a secure and safety experience for buyers and sellers.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Stakeholders
+  - Original & Secondary NFT ticket buyers
+  - Event organizers
+  - Marketers
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Exceptions
+  - Event organizers can utilize the ticketing system to produce the required number of NFT tickets on their choice of a blockchain platform.
+  - Customers acquire NFT tokens and store them in mobile-device-accessible wallets.
+  - Event organizers or artists can configure royalty splits to automatically direct a percentage of money from all secondary resales.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- User stories
+  - As a fan of this entertainment event, the user wants to be able to use a smart contract to purchase a NFT ticket to an event, so that the user can be sure that their ticket is valid and that they can easily transfer it to a friend or sell it on the secondary market if necessary.
+  - The user can click the connect MetaMask button to connect to their MetaMask account.
+  - The user can click the dropdown menu to choose to buy a ticket from either the primary market or the secondary market.
+  - The user can sell their unused ticket by selecting the sell link from the dropdown menu.
+  - The user can click the button to purchase the ticket through metamask account.
+  - The user can also click the button to sell the ticket using metamask to recieve funds.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Architecture
 
-## Learn More
+- Project description
+  - An dApp allows user to buy NFT ticket.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Functions
+  - User first connect to their metamask wallet by clicking the connect button or scan their QR code.
+  - User interacts with the actions dropdown menu to select which action they want.
+  - User interacts with our dApp which will allow our user to purchase an NFT tickets.
+  - User can check if they own any ticket by clicking "Your Tickets" from the dropdown menu.
+  - User can scan wallet address to verify ticket ownership and check-in.
+  - User can enable and disable sales on the smart contract.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- How NFT Works
+![Alt text](src/images/HowNFTworks.png)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- UI Sceenshots
+![Alt text](src/images/UI.png)
+![Alt text](src/images/UI-2.png)
+![Alt text](src/images/UI-3.png)
+![Alt text](src/images/UI-4.png)
+![Alt text](src/images/UI-5.png)
